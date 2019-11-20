@@ -1,0 +1,27 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{lmodern}
+\usepackage{beppe_package_eng}
+\usepackage{amsmath}
+\usepackage{slashed}
+
+\author{Bruno Bucciotti\thanks{bruno.bucciotti@sns.it}}
+\title{GR}
+
+\renewcommand{\k}{k_B}
+
+\begin{document}
+	\maketitle
+	\begin{abstract}
+	\end{abstract}
+	
+	\subsection{Densità tensoriali}
+	Definisco densità tensoriale di peso $w$ un oggetto che sotto trasformazione $\Lambda^\mu_{\,\,\nu} = \dfrac{\partial x'^\mu}{\partial x^\nu}$ trasforma come un tensore a meno di un fattore $det(\Lambda)^w$.
+	\paragraph{Tensore metrico} Il tensore metrico trasforma come $g' = (\Lambda^{-1})^t g \Lambda^{-1}$, cioè $\sqrt{-g'} = \dfrac{1}{det(\lambda)} \sqrt{-g}$, cioè $\sqrt{-g}$ è densità tensoriale di peso $-1$.
+	\paragraph{Simbolo di Levi-Civita} $\epsilon^{\mu_1..\mu_4}$ è definito come tensore totalmente antisimmetrico con valore $+1$ se la permutazione degli indici è pari, \emph{in ogni sistema di riferimento} (è tensore invariante per definizione).
+	
+	Allora possiamo studiare che tipo di densità tensoriale è $\epsilon^{\mu_1..\mu_4}$. Ricordando che $\epsilon^{\mu_1..\mu_4} \Lambda^{\nu_1}_{\,\,\mu_1} .. \Lambda^{\nu_4}_{\,\,\mu_4} = det(\Lambda) \epsilon^{\nu_1..\nu_4}$ si ha
+	\[ \epsilon^{\nu_1..\nu_4} = \epsilon'^{\nu_1..\nu_4} = (det\Lambda)^w \epsilon^{\mu_1..\mu_4} \Lambda^{\nu_1}_{\,\,\mu_1} .. \Lambda^{\nu_4}_{\,\,\mu_4} = (det\Lambda)^w \epsilon^{\nu_1..\nu_4} (det\Lambda) \]
+	dunque $w=-1$, cioè $\epsilon^{\mu_1..\mu_4}$ è densità tensoriale di peso $-1$. Per avere un tensore definiamo $E^{\mu_1..\mu_4} := \dfrac{1}{\sqrt{-g}} \epsilon^{\mu_1..\mu_4}$. Allora si ha che $E^{\mu_1..\mu_4}$ è tensore (non invariante). Analogamente $\epsilon_{\mu_1..\mu_4}$ è densità con peso $+1$ e $E_{\mu_1..\mu_4} := \sqrt{-g} \epsilon_{\mu_1..\mu_4}$ è tensore.
+	
+	
+\end{document}
